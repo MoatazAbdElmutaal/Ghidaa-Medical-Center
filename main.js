@@ -53,3 +53,30 @@ document.querySelectorAll('.nav-link').forEach(link => {
         this.classList.add('active');
     });
 });
+
+// إغلاق القائمة عند الضغط خارجها أو عند اختيار رابط
+document.addEventListener('click', function (event) {
+    const navbarCollapse = document.getElementById('mainNav');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    
+    // التحقق إذا كانت القائمة مفتوحة وأن الضغطة تمت خارج الناف بار
+    if (navbarCollapse.classList.contains('show') && 
+        !navbarCollapse.contains(event.target) && 
+        !navbarToggler.contains(event.target)) {
+        
+        // إغلاق القائمة باستخدام Bootstrap API
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+        bsCollapse.hide();
+    }
+});
+
+// إغلاق القائمة تلقائياً عند الضغط على أي رابط بداخلها
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.getElementById('mainNav');
+        if (navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+            bsCollapse.hide();
+        }
+    });
+});
