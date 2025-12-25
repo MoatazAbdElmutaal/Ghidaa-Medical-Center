@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الغيداء الطبي المتكامل</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+</script>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">مركز الغيداء</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto" id="navLinks">
+                <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="#doctors">الأطباء</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">آراء المرضى</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-3" href="booking.html">حجز موعد عاجل</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay"></div>
+                <img src="imgs/Medical2.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-3 fw-bold">نعتني بصحتك بأمانة</h1>
+                    <p class="lead">أفضل الكوادر الطبية في خدمتك</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="imgs/Medical1.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-3 fw-bold">تكنولوجيا طبية متطورة</h1>
+                    <p class="lead">أجهزة تشخيصية لضمان دقة النتائج</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="imgs/Medical3.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                <div class="carousel-caption text-center">
+                    <h1 class="display-3 fw-bold">رعاية على مدار الساعة</h1>
+                    <p class="lead">طوارئ مجهزة بأحدث الوسائل</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white shadow-sm stat-box">
+                        <i class="fas fa-user-injured fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold text-primary counter" data-target="3000">0</h2>
+                        <p class="mb-0 text-muted">مريض سعيد</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white shadow-sm stat-box">
+                        <i class="fas fa-user-md fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold text-primary counter" data-target="20">0</h2>
+                        <p class="mb-0 text-muted">طبيب متخصص</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white shadow-sm stat-box">
+                        <i class="fas fa-ambulance fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold text-primary counter" data-target="24">0</h2>
+                        <p class="mb-0 text-muted">خدمة طوارئ 24/7</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 bg-white shadow-sm stat-box">
+                        <i class="fas fa-hospital fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold text-primary counter" data-target="15">0</h2>
+                        <p class="mb-0 text-muted">قسم طبي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">خدماتنا الطبية</h2>
+            <p class="text-muted">نقدم رعاية صحية متكاملة عبر أقسامنا المتخصصة</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-tooth"></i></div>
+                    <h4 class="fw-bold">طب الأسنان</h4>
+                    <p class="text-muted small">تجميل وزراعة الأسنان بأحدث التقنيات العالمية ومعايير التعقيم.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="fw-bold">أمراض القلب</h4>
+                    <p class="text-muted small">تشخيص وعلاج أمراض القلب والأوعية الدموية بإشراف نخبة من الاستشاريين.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-microscope"></i></div>
+                    <h4 class="fw-bold">المختبر الحديث</h4>
+                    <p class="text-muted small">نتائج دقيقة وسريعة لكافة أنواع التحاليل الطبية باستخدام أجهزة متطورة.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-baby"></i></div>
+                    <h4 class="fw-bold">طب الأطفال</h4>
+                    <p class="text-muted small">عناية فائقة بصحة طفلك منذ الولادة مع برامج تطعيم ومتابعة دورية.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-x-ray"></i></div>
+                    <h4 class="fw-bold">الأشعة والتشخيص</h4>
+                    <p class="text-muted small">وحدة أشعة متكاملة تشمل السونار، الأشعة السينية، والأشعة المقطعية.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm p-4 text-center">
+                    <div class="icon-shape"><i class="fas fa-eye"></i></div>
+                    <h4 class="fw-bold">طب العيون</h4>
+                    <p class="text-muted small">فحص النظر وعلاج المشاكل البصرية وجراحات العيون بأحدث أجهزة الليزر.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="imgs/Medical1.jpg" class="img-fluid rounded shadow" alt="About Us">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0 px-md-5">
+                    <h2 class="fw-bold mb-4">لماذا يختار المرضى مركزنا؟</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">✅ رعاية طبية شاملة لجميع أفراد الأسرة.</li>
+                        <li class="mb-3">✅ سهولة حجز المواعيد عبر الموقع أو الهاتف.</li>
+                        <li class="mb-3">✅ طاقم تمريض محترف ومدرب على أعلى مستوى.</li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">اقرأ المزيد عنا</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">نخبة أطبائنا</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card doctor-card border-0 shadow-sm text-center p-3">
+                            <img src="imgs/medical1.jpg" class="rounded-circle mx-auto" style="width:120px; height:120px; object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="fw-bold">د. محمد أحمد</h5>
+                                <p class="text-primary">استشاري جراحة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card doctor-card border-0 shadow-sm text-center p-3">
+                            <img src="imgs/medical1.jpg" class="rounded-circle mx-auto" style="width:120px; height:120px; object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="fw-bold">د. سارة حسن</h5>
+                                <p class="text-primary">أخصائية نساء وتوليد</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card doctor-card border-0 shadow-sm text-center p-3">
+                            <img src="imgs/medical1.jpg" class="rounded-circle mx-auto" style="width:120px; height:120px; object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="fw-bold">د. سارة حسن</h5>
+                                <p class="text-primary">أخصائية نساء وتوليد</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card doctor-card border-0 shadow-sm text-center p-3">
+                            <img src="imgs/medical1.jpg" class="rounded-circle mx-auto" style="width:120px; height:120px; object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="fw-bold">د. علي خالد</h5>
+                                <p class="text-primary">استشاري عظام</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">قالوا عنّا</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4 border-0 shadow-sm">
+                        <p class="fst-italic">"خدمة ممتازة واحترافية عالية في التعامل، شكراً لجميع الطاقم."</p>
+                        <h6 class="fw-bold text-primary">- أحمد محمد</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 border-0 shadow-sm">
+                        <p class="fst-italic">"المعدات حديثة جداً والنظافة في المركز ملحوظة بشكل كبير."</p>
+                        <h6 class="fw-bold text-primary">- مريم علي</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 border-0 shadow-sm">
+                        <p class="fst-italic">"سرعة في الفحص ودقة في المواعيد، تجربة مريحة جداً."</p>
+                        <h6 class="fw-bold text-primary">- خالد حسن</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="contact" class="py-5 bg-light" dir="rtl">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6 order-md-1">
+                <div class="card shadow border-0 p-4 rounded-4 bg-white">
+                    <h3 class="fw-bold mb-4 text-primary text-end">أرسل لنا رسالة</h3>
+                    <form class="text-end">
+                        <div class="mb-3">
+                            <label class="form-label d-block">الاسم</label>
+                            <input type="text" class="form-control" placeholder="اسمك الكريم">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block">البريد الإلكتروني أو الهاتف</label>
+                            <input type="text" class="form-control" placeholder="كيف نتواصل معك؟">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block">الرسالة</label>
+                            <textarea class="form-control" rows="4" placeholder="اكتب استفسارك هنا"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold mt-2">إرسال الآن</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-5 mt-md-0 px-md-5 text-start order-md-2">
+                <h2 class="fw-bold mb-4">يسعدنا تواصلك معنا</h2>
+                <p class="text-muted mb-5 leading-lg">إذا كان لديك أي استفسار طبي أو شكوى، لا تتردد في مراسلتنا أو الاتصال بنا مباشرة عبر الوسائل التالية:</p>
+                
+                <div class="contact-info-list">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="mx-4 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="min-width: 50px; height: 50px;">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">اتصل بنا</h6>
+                            <p class="text-muted mb-0" dir="ltr">+249121265502</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="mx-4 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="min-width: 50px; height: 50px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">الموقع</h6>
+                            <p class="text-muted mb-0">السودان، الخرطوم، بحري الدروشاب مربع 12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/249121265502" class="btn btn-outline-primary mt-4 px-5 py-2 rounded-pill fw-bold">
+                    <i class="fab fa-whatsapp me-2"></i> فتح محادثة واتساب
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold text-primary">مركز الغيداء الطبي</h5>
+                    <p class="text-light small">نحن ملتزمون بتقديم أفضل الخدمات الطبية وفق المعايير العالمية.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-bold mb-3">تواصل معنا</h6>
+                    <p class="text-light mb-1">📧 info@alghida-center.com</p>
+                    <p class="text-light">📞 +249121265502</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center text-secondary small mb-0">جميع الحقوق محفوظة &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <a href="https://wa.me/249121265502" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
