@@ -71,25 +71,25 @@
 </nav>
 
 
-<section class="py-5 mt-5">
+<section class="py-5 mt-4">
     <div class="container">
-        <div class="row g-5">
+        <div class="row g-4">
             <div class="col-lg-8">
-                <div class="card shadow border-0 p-4 p-md-5">
-                    <h2 class="fw-bold mb-4 text-primary">طلب حجز موعد جديد</h2>
+                <div class="card shadow border-0 p-3 p-md-5 rounded-4">
+                    <h2 class="fw-bold mb-4 text-primary text-center text-md-end">طلب حجز موعد جديد</h2>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label">الاسم الكامل</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control shadow-sm" required placeholder="أدخل اسمك">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">رقم الهاتف</label>
-                                <input type="tel" class="form-control" required>
+                                <input type="tel" class="form-control shadow-sm" required placeholder="0XXXXXXXXX">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">القسم المطلوب</label>
-                                <select class="form-select">
+                                <select class="form-select shadow-sm">
                                     <option>عيادة الأسنان</option>
                                     <option>طب الأطفال</option>
                                     <option>القلب والأوعية</option>
@@ -98,14 +98,14 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">تاريخ الموعد</label>
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control shadow-sm">
                             </div>
                             <div class="col-12">
                                 <label class="form-label">ملاحظات إضافية (اختياري)</label>
-                                <textarea class="form-control" rows="4" placeholder="اشرح لنا حالتك باختصار"></textarea>
+                                <textarea class="form-control shadow-sm" rows="3" placeholder="اشرح لنا حالتك باختصار"></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">تأكيد طلب الحجز</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold shadow">تأكيد طلب الحجز</button>
                             </div>
                         </div>
                     </form>
@@ -113,21 +113,28 @@
             </div>
 
             <div class="col-lg-4">
-                <div class="bg-primary text-white p-4 rounded-4 mb-4">
-                    <h4 class="fw-bold mb-3">ساعات العمل</h4>
-                    <ul class="list-unstyled small">
-                        <li class="d-flex justify-content-between border-bottom py-2"><span>السبت - الخميس</span> <span>8:00 ص - 10:00 م</span></li>
-                        <li class="d-flex justify-content-between py-2"><span>الجمعة</span> <span>طوارئ فقط</span></li>
+                <div class="bg-primary text-white p-4 rounded-4 mb-4 shadow-sm">
+                    <h4 class="fw-bold mb-3 border-bottom pb-2">ساعات العمل</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex justify-content-between py-2 border-bottom border-white border-opacity-25">
+                            <span>السبت - الخميس</span> 
+                            <span>8:00 ص - 10:00 م</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2">
+                            <span>الجمعة</span> 
+                            <span class="badge bg-danger">طوارئ فقط</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="rounded-4 overflow-hidden shadow-sm" style="height: 300px;">
-                    <h2 class="text-center fw-bold mb-4">موقعنا على الخريطة</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123041.52735773173!2d32.4497645!3d15.5480287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde0973a879%3A0x6b3a0e633d7d7c6e!2sKhartoum%2C%20Sudan!5e0!3m2!1sen!2s!4v1700000000000" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+                
+                <div class="rounded-4 overflow-hidden shadow-sm bg-white p-2">
+                    <h6 class="fw-bold text-center mb-3">موقعنا على الخريطة</h6>
+                    <div style="height: 250px; width: 100%;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245943.92482348517!2d32.4172449230571!3d15.543594833246743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8f81076b1f23%3A0xc68e7f1694f275e7!2z2KfZhNiu2LHar9mI2YXYjCDYp9mE2LPZiNiv2KfZhg!5e0!3m2!1sar!2ssd!4v1700000000000" 
+                            width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,4 +185,5 @@ document.querySelector('form').addEventListener('submit', function(e) {
     .whatsapp-btn:hover { color: white; background-color: #128c7e; }
 </style>
 </body>
+
 </html>
